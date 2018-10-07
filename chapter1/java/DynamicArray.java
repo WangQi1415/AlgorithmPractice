@@ -18,7 +18,7 @@ class DynamicArray {
 			 //System.out.println("继续添加");
 		        this.a[this.size]=e;
 		        this.size++;
-		        //System.out.println("szie="+this.size);
+		        //System.out.println("size="+this.size);
 		   }else{
 			   
 			 //  throw new IllegalArgumentException("AddLast failed. Array is full.");
@@ -98,76 +98,7 @@ class DynamicArray {
 	    }
 	}
 	
-	
-	//判断是否存在某一个元素
-	
-	//防止用户输入的index非法
-	
-	
-	//删除某个元素的方法
-	
-	
-	
-	//复习 Stringbuilder
-	
-	//java中使用泛型  new一个数组  强转   equals与 ==的区别  toString 的复习   泛型中不能存放 基本数据类型
-	
-	//删除的时候  最后一个元素还有引用指着  不会被内存回收机制给回收  想要回收 将  data[size]=null 
-	
-	
-	// 比较 java Python中的垃圾回收机制
-	
-	
-	//向其中添加 学生类
-	
-	
-	
-	//完善动态地功能
-	
-	
-	//重新开辟一个数组  resize()方法  如果删除元素导致元素非常小的时候  换一个比较小的空间
-	
-	
-	
-	//时间复杂度的分析
-	/*
-	 * O(1)  O(n)....
-	 * 
-	 * 忽略常数  描述的是渐进时间复杂度
-	 * 
-	 * O(n)线性时间的算法
-	 * T=2*n+2
-	 * 
-	 * 
-	 * T=1*n*n+O   O(n^2)
-	 * 
-	 * 
-	 * 分析各个时间复杂度
-	 * 
-	 * 添加  O(1)  与数组的规模没有关系
-	 * addFirst(e) O(n)
-	 * add(index,e)  计算期望  O(n/2)=O(n)
-	 * 通常关注的是最糟糕的事情
-	 * 
-	 * 
-	 * resize() O(n)
 
-	 * 
-	 * 
-	 * 删除操作  同理
-	 * 
-	 * 修改操作  O(1)
-	 * 
-	 * 查找操作 
-	 * get()  1
-	 * contains()  n
-	 * find()  n
-	 * 
-	 *resize()时间复杂度的分析   均摊复杂度
-	 *缩容也会导致复杂度震荡的情况
-	 *解决方法  lazy的方法
-	 * */
-	
 	
 }
 
