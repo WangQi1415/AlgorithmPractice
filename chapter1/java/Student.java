@@ -1,6 +1,7 @@
 package day01;
 
 class Student {
+
 	private String name;
 	private int age;
 	Student(String name,int age){
@@ -24,7 +25,13 @@ class Student {
 	public String toString() {
 		return this.getName()+this.getAge();
 	}
-	
+/*@Override
+此处只是为了测试出现冲突的时候的解决方案
+	public String toString() {
+		return this.getName()+this.getAge();
+	}
+*/
+
 	@Override
 	public boolean equals(Object obj) {
 		if(obj instanceof Student)
