@@ -33,16 +33,24 @@ class DynamicArrayE<E>{
 		}
 		this.a=b;
 	}
-	public void deleElement(int index) {
+	public E deleElement(int index) {
+		E e=this.a[index];
 		if(index<0||index>=size) {
 			System.out.println("请输入合法的下标值");
-			return;
+			return null;
 		}
 		 for(;index<this.size-1;index++){
 		        this.a[index]=this.a[index+1];
 		    }
 		 this.a[size]=null;//最后一个元素的索引置为空，使得垃圾回收机制可以回收它
 		 size--;
+		 return e;
+	}
+	public E deleLast() {
+		return this.deleElement(this.getSize()-1);
+	}
+	public E deleFirst() {
+		return this.deleElement(0);
 	}
 	public void changeElement(int index,E e) {
 		if(index<0||index>=this.size) {
@@ -114,7 +122,9 @@ class DynamicArrayE<E>{
 	public int getCapacity() {
 		return this.a.length;
 	}
-	
+	public boolean isEmpty() {
+		return this.size==0;
+	}
 	void viewArray(){
 	    for(int i=0;i<this.size;i++){
 	       System.out.println(this.a[i]);
