@@ -36,4 +36,9 @@ class Student {
 			}
 		
 	}
+	public String testGitflict() {
+		return "this is wongkee!!!"
+		
+	}
+
 }
