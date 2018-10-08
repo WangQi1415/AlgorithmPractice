@@ -1,4 +1,4 @@
-package day01;
+﻿package day01;
 
 class Student {
 
@@ -41,6 +41,10 @@ class Student {
 			}else {
 				return false;
 			}
+		
+	}
+	public String testGitflict() {
+		return "this is wangqi1415!!!"
 		
 	}
 }
